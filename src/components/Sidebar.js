@@ -17,12 +17,12 @@ export default function Sidebar() {
             >
                 <div className="flex-col items-stretch min-h-full flex-nowrap px-0 relative">
                     <a
-                        href="https://material-tailwind.com?ref=mtd"
+                        href="https://rm-website.netlify.app/"
                         target="_blank"
                         rel="noreferrer"
                         className="mt-2 text-center w-full inline-block"
                     >
-                        <H6 color="gray">Material Tailwind</H6>
+                        <H6 color="gray">React Dashboard</H6>
                     </a>
                     <div className="flex flex-col">
                         <hr className="my-4 min-w-full" />
@@ -70,37 +70,28 @@ export default function Sidebar() {
                                 </NavLink>
                             </li>
                             <li className="px-4 rounded-lg mb-2 text-gray-700">
-                                <a
-                                    href="https://demos.creative-tim.com/material-tailwind-kit-react/#/login"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="flex items-center gap-4 text-sm font-light py-3"
+                                <span
+                                    className="cursor-pointer flex items-center gap-4 text-sm font-light py-3"
                                 >
                                     <Icon name="fingerprint" size="2xl" />
                                     Login
-                                </a>
+                                </span>
                             </li>
                             <li className="px-4 rounded-lg mb-2 text-gray-700">
-                                <a
-                                    href="https://demos.creative-tim.com/material-tailwind-kit-react/#/register"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="flex items-center gap-4 text-sm font-light py-3"
+                                <span
+                                    className="cursor-pointer flex items-center gap-4 text-sm font-light py-3"
                                 >
                                     <Icon name="list_alt" size="2xl" />
                                     Register
-                                </a>
+                                </span>
                             </li>
                             <li className="px-4 rounded-lg mb-2 text-gray-700">
-                                <a
-                                    href="https://demos.creative-tim.com/material-tailwind-kit-react/#/landing"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="flex items-center gap-4 text-sm font-light py-3"
+                                <span
+                                    className="cursor-pointer flex items-center gap-4 text-sm font-light py-3"
                                 >
                                     <Icon name="web" size="2xl" />
                                     Landing Page
-                                </a>
+                                </span>
                             </li>
                             <li className="px-4 rounded-lg mb-2 text-gray-700">
                                 <a
@@ -118,23 +109,23 @@ export default function Sidebar() {
                         <ul className="flex-col min-w-full flex list-none absolute bottom-0">
                             <li className="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 px-4 rounded-lg text-white mb-2">
                                 <a
-                                    href="https://material-tailwind.com/documentation/quick-start"
+                                    href="https://rm-website.netlify.app/"
                                     target="_blank"
                                     rel="noreferrer"
                                     className="flex items-center gap-4 text-sm font-light py-3"
                                 >
                                     <Icon name="description" size="2xl" />
-                                    Documentation
+                                    See More
                                 </a>
                             </li>
                             <li className="bg-gradient-to-tr from-purple-500 to-purple-700 px-4 rounded-lg text-white">
                                 <a
-                                    href="https://www.creative-tim.com/product/material-tailwind-dashboard-react"
+                                    href="https://github.com/raselmahmud22"
                                     target="_blank"
                                     rel="noreferrer"
                                     className="flex items-center justify-center gap-4 text-sm font-light py-3"
                                 >
-                                    Free Download
+                                    Source Code
                                 </a>
                             </li>
                         </ul>

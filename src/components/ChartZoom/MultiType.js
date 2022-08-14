@@ -5,7 +5,6 @@ import zoomPlugin from "chartjs-plugin-zoom";
 import options from "./useOptions";
 import FetchData from "./FetchData";
 import { useState } from "react";
-import styles from "./customText.module.css";
 Chart.register(zoomPlugin);
 
 function MultiType({ setFirst }) {
@@ -80,8 +79,8 @@ function MultiType({ setFirst }) {
         </button>
       </div>
       <div className="w-10/12 mx-auto">
-        <h2 className={`${styles.customText}`}>
-          Rotate your mouse for zoom & pen
+        <h2 className={'absolute left-[40%] top-[30%] text-gray-300'}>
+          Rotate your mouse wheel for zoom & pen
         </h2>
         <Line data={data} options={options} />
       </div>
