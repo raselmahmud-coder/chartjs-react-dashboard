@@ -4,7 +4,7 @@ const FetchData = (value) => {
     const [getVisualData, setGetVisualData] = useState([]);
     useEffect(() => {
       fetch(
-        `http://localhost:5000/fakeData?value=${value}`,
+        `https://rm-chartjs-react.herokuapp.com/fakeData?value=${value}`,
       )
         .then((res) => res.json())
         .then((data) => setGetVisualData(data));
