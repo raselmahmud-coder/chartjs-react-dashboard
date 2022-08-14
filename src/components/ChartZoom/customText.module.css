@@ -1,0 +1,7 @@
+.customText{
+    position: absolute;
+    left: 40%;
+    color: rgba(0, 0, 0, 0.333);
+    top: 30%;
+    z-index: 0;
+}
