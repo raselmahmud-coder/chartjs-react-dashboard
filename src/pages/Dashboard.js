@@ -2,7 +2,7 @@
 import PageVisitsCard from 'components/PageVisitsCard';
 import StatusCard from 'components/StatusCard';
 import TrafficCard from 'components/TrafficCard';
-import ChartBar from 'components/ChartBar';
+import LineChart from 'components/LineChart';
 
 export default function Dashboard() {
     return (
@@ -11,7 +11,7 @@ export default function Dashboard() {
 
             <div className="px-3 md:px-8 -mt-24">
                 <div className="container mx-auto max-w-full my-7">
-                    <ChartBar/>
+                    <LineChart/>
                 </div>
             </div>
 

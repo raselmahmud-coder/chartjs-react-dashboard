@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
 
-const FetchData = () => {
+const FetchData = (value) => {
     const [getVisualData, setGetVisualData] = useState([]);
     useEffect(() => {
       fetch(
-        `https://raw.githubusercontent.com/raselmahmud22/fakeData/main/jsondata.json`,
+        `http://localhost:5000/fakeData?value=${value}`,
       )
         .then((res) => res.json())
         .then((data) => setGetVisualData(data));
-    },[]);
+    },[value]);
     return getVisualData;
 };
 

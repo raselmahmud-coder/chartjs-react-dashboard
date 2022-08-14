@@ -7,16 +7,16 @@ import FetchData from "./FetchData";
 import { useState } from "react";
 Chart.register(zoomPlugin);
 
-function MultiType({ setFirst }) {
+function MultiType({ setFirst: setStateValue }) {
   const [values, setValues] = useState("relevance");
-  const handleFilter = async (e) => {
+  const handleFilter = (e) => {
     setValues(e.target.value);
-    setFirst(e.target.value);
+    setStateValue(e.target.value);
   };
   const allParseLabels = [];
   let allParseData = {};
-  const allData = FetchData();
-  allData.forEach((obj) => {
+  const allData = FetchData(values);
+  allData?.forEach((obj) => {
     if (
       values === "country" ||
       values === "topic" ||
@@ -79,10 +79,10 @@ function MultiType({ setFirst }) {
         </button>
       </div>
       <div className="w-10/12 mx-auto">
-        <h2 className={'absolute left-[40%] top-[30%] text-gray-300'}>
+        <h2 className={'absolute left-[35%] top-[16%] text-gray-300 z-0'}>
           Rotate your mouse wheel for zoom & pen
         </h2>
-        <Line data={data} options={options} />
+        <Line className="z-10" data={data} options={options} />
       </div>
     </>
   );
